@@ -1,0 +1,18 @@
+/* styles/ReportForm.module.css */
+
+.formContainer {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .contactInput {
+    margin-top: 10px;
+  }
+  
+  .contactTimeInput {
+    margin-top: 10px;
+  }
+  
