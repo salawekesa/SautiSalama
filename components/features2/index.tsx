@@ -40,7 +40,7 @@ export const Features2 = () => {
                >
                   Empower Your Voice: Sauti Salama ensures your privacy and safety with 
                   our anonymous reporting feature. Speak out against gender-based violence
-                   without fear, contributing to a safer community."
+                   without fear, contributing to a safer community.
                </Text>
 
                <Flex
@@ -68,9 +68,9 @@ export const Features2 = () => {
                               color: '$accents8',
                            }}
                         >
-                           "Navigating Legal Paths: Sauti Salama stands by you with our legal support 
+                           Navigating Legal Paths: Sauti Salama stands by you with our legal support 
                            feature. Connect with experienced professionals who can guide you through 
-                           the legal process, ensuring your rights are protected and justice is pursued."
+                           the legal process, ensuring your rights are protected and justice is pursued.
                         </Text>
                      </Flex>
                   </Flex>
@@ -92,9 +92,9 @@ export const Features2 = () => {
                               color: '$accents8',
                            }}
                         >
-                          "Caring for Your Well-being: Sauti Salama provides access to a comprehensive
+                          Caring for Your Well-being: Sauti Salama provides access to a comprehensive
                            range of mental health resources. Find support, guidance, and counseling
-                           services to help you on your journey towards healing and resilience."
+                           services to help you on your journey towards healing and resilience.
                         </Text>
                      </Flex>
                   </Flex>

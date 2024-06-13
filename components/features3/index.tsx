@@ -96,8 +96,11 @@ export const Features3 = () => {
                      </Flex>
                   </Card.Body>
                </Card>
-               <Card css={{ mw: '500px' }} children={undefined}>
-                  {/* <Card.Body>
+               <Card css={{ mw: '500px' }}>
+                  <p>This is a child element inside the Card component.</p>
+               </Card>
+               {/* <Card css={{ mw: '500px' }} children={undefined}>
+                  <Card.Body>
                      <Flex css={{gap: '0.5rem'}}>
                         <BoxIcon />
                         <Flex direction={'column'}>
@@ -109,8 +112,8 @@ export const Features3 = () => {
                            </Text>
                         </Flex>
                      </Flex>
-                  </Card.Body> */}
-               </Card>
+                  </Card.Body>
+               </Card> */}
             </Flex>
          </Box>
 
