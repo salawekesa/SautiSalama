@@ -55,7 +55,6 @@ export const Hero = () => {
                   >
                      {' '}
                   </Text>
-                  <br></br>
                   <Text
                      h1
                      css={{
@@ -127,13 +126,13 @@ export const Hero = () => {
             </Box>
             <Box
                css={{
-                  '& img': {
+                  '& Image': {
                      width: '575px',
                      objectFit: 'contain',
                   },
                }}
             >
-               <Image src="banner.png" alt={''} />
+               <Image src="/banner.png" alt="" width={575} height={540} />
             </Box>
          </Flex>
          <Divider

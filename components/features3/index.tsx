@@ -96,9 +96,9 @@ export const Features3 = () => {
                      </Flex>
                   </Card.Body>
                </Card>
-               <Card css={{ mw: '500px' }}>
+               {/* <Card css={{ mw: '500px' }}>
                   <p>This is a child element inside the Card component.</p>
-               </Card>
+               </Card> */}
                {/* <Card css={{ mw: '500px' }} children={undefined}>
                   <Card.Body>
                      <Flex css={{gap: '0.5rem'}}>
