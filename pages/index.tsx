@@ -29,6 +29,7 @@ const Home: NextPage = () => {
     
 <main className='app'>
 <Layout>
+   <script src="https://cdn.userway.org/widget.js" data-account="FnP375IGZn"></script>
   <Nav />
   <Box as="main">
   <Hero />
