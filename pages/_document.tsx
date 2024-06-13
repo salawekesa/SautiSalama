@@ -31,7 +31,7 @@ class MyDocument extends Document {
                rel="stylesheet"
             />
             <Head>{CssBaseline.flush()}
-            <script src="https://cdn.userway.org/widget.js" data-account="FnP375IGZn"></script>
+            
             </Head>
 
             <body>
