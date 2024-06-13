@@ -26,7 +26,9 @@ export const Trial = () => {
                Breaking the Silence, Building a Brighter Future
             </Text>
 
-            <Button href="/Report">Button</Button>
+            <Button as="a" href="/Report">
+            Report
+            </Button>
          </Flex>
 
          <Divider
