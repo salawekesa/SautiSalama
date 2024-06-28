@@ -83,6 +83,8 @@ const Report = () => {
               align-items: center;
               justify-content: center;
               max-width: 500px;
+              margin:2rem;
+              padding:2rem;
              
             }
           `}</style>
