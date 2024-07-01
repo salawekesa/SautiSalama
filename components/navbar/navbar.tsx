@@ -10,7 +10,14 @@ import Image from 'next/image'; // Import Image component from Next.js
 export const Nav = () => {
   const { setTheme } = useNextTheme();
   const { isDark, type } = useTheme();
-  const collapseItems = ['Legal', 'Health', 'Shelter', 'Community'];
+  const collapseItems = [
+    { name: 'Legal', href: '/legal' },
+    { name: 'Health', href: '/health' },
+    { name: 'Shelter', href: '/shelter' },
+    { name: 'Community', href: '/community' },
+    { name: 'Report', href: '/Report' }
+  ];
+
   return (
     <Navbar isBordered css={{
       'overflow': 'hidden',
@@ -21,8 +28,8 @@ export const Nav = () => {
     }}>
       <Navbar.Brand>
         <Navbar.Toggle aria-label="toggle navigation" showIn="xs" />
-      
-        {/*Logo and text */}
+
+        {/* Logo and text */}
         <Link href="/" className='flex gap-2 flex-center'>
           <Image
             src="/assets/images/logg.png"
@@ -31,9 +38,6 @@ export const Nav = () => {
             height={100}
             className='object-contain'
           />
-         {/* <Text b color="inherit" hideIn="xs">
-               ACME
-         </Text> */}
         </Link>
 
         {/* Dropdown Menu */}
@@ -74,16 +78,15 @@ export const Nav = () => {
             >
               {/* Dropdown Items */}
               {collapseItems.map(item => (
-                <Dropdown.Item key={item} showFullDescription description={`Access ${item.toLowerCase()}`}>
-                  {item}
+                <Dropdown.Item key={item.name} showFullDescription description={`Access ${item.name.toLowerCase()}`}>
+                  <Link href={item.href}>
+                    {item.name}
+                  </Link>
                 </Dropdown.Item>
               ))}
             </Dropdown.Menu>
           </Dropdown>
-          {/* Navbar Links */}
-          {/* <Navbar.Link  href="#">Donate</Navbar.Link> */}
           <Navbar.Link isActive href="/Report">Report</Navbar.Link>
-          {/* <Navbar.Link href="#">Company</Navbar.Link> */}
         </Navbar.Content>
       </Navbar.Brand>
 
@@ -91,20 +94,14 @@ export const Nav = () => {
       <Navbar.Collapse>
         {/* Collapse Items */}
         {collapseItems.map(item => (
-          <Navbar.CollapseItem key={item}>
-            <Link color="inherit" css={{ minWidth: '100%' }} href="#">
-              {item}
+          <Navbar.CollapseItem key={item.name}>
+            <Link color="inherit" css={{ minWidth: '100%' }} href={item.href}>
+              {item.name}
             </Link>
-
-            
           </Navbar.CollapseItem>
-          
         ))}
         {/* GitHub Icon */}
         <Navbar.CollapseItem>
-          {/* <Link color="inherit" css={{ minWidth: '100%' }} target="_blank" href="https://github.com/Siumauricio/landing-template-nextui">
-            <GithubIcon />
-          </Link> */}
         </Navbar.CollapseItem>
         {/* Theme Switch */}
         <Navbar.CollapseItem>
@@ -114,19 +111,7 @@ export const Nav = () => {
 
       {/* Navbar Content */}
       <Navbar.Content>
-        {/* Modal Login */}
         <ModalLogin />
-        {/* Start Free Trial Button */}
-        {/* <Navbar.Item>
-          <Button auto flat href="#">Start free trial</Button>
-        </Navbar.Item> */}
-        {/* GitHub Icon (for larger screens) */}
-        {/* <Navbar.Item hideIn={'xs'}>
-          <Link color="inherit" css={{ minWidth: '100%' }} target="_blank" href="">
-            <GithubIcon />
-          </Link>
-        </Navbar.Item> */}
-        {/* Theme Switch (for larger screens) */}
         <Navbar.Item hideIn={'xs'}>
           <Switch checked={isDark} onChange={e => setTheme(e.target.checked ? 'dark' : 'light')} />
         </Navbar.Item>
