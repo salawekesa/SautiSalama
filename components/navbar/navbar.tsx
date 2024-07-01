@@ -2,7 +2,6 @@ import { Button, Dropdown, Link, Navbar, Switch, Text } from '@nextui-org/react'
 import React from 'react';
 import { ModalLogin } from '../modal';
 import { icons } from './icons';
-import { AcmeLogo } from './logo';
 import { useTheme as useNextTheme } from 'next-themes';
 import { useTheme } from '@nextui-org/react';
 import { GithubIcon } from '../icons/GithubIcon';
@@ -96,7 +95,10 @@ export const Nav = () => {
             <Link color="inherit" css={{ minWidth: '100%' }} href="#">
               {item}
             </Link>
+
+            
           </Navbar.CollapseItem>
+          
         ))}
         {/* GitHub Icon */}
         <Navbar.CollapseItem>

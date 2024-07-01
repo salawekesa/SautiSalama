@@ -25,6 +25,7 @@ class MyDocument extends Document {
       return (
          <Html lang="en">
             <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <script src="https://cdn.userway.org/widget.js" data-account="FnP375IGZn"></script>
             <link
                href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
                rel="stylesheet"

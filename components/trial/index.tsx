@@ -1,4 +1,4 @@
-import {Button, Divider, Text} from '@nextui-org/react';
+import {Button, Divider, Text, Link,} from '@nextui-org/react';
 import React from 'react';
 import {Flex} from '../styles/flex';
 
@@ -25,6 +25,10 @@ export const Trial = () => {
             >
                Breaking the Silence, Building a Brighter Future
             </Text>
+
+            <Button as="a" href="/Report">
+            Button
+            </Button>
 
             <Button href="/Report">Button</Button>
          </Flex>
