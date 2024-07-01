@@ -25,11 +25,7 @@ export const Trial = () => {
             >
                Breaking the Silence, Building a Brighter Future
             </Text>
-
-            <Button as="a" href="/Report">
-            Button
-            </Button>
-
+            
             <Button as="a" href="/Report">
             Report
             </Button>
