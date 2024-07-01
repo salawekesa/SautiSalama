@@ -30,7 +30,9 @@ export const Trial = () => {
             Button
             </Button>
 
-            <Button href="/Report">Button</Button>
+            <Button as="a" href="/Report">
+            Report
+            </Button>
          </Flex>
 
          <Divider
