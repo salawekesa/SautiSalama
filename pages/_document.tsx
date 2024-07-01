@@ -7,8 +7,9 @@ import Document, {
    DocumentContext,
    DocumentInitialProps,
 } from 'next/document';
-import {CssBaseline} from '@nextui-org/react';
-import {globalStyles} from '../styles/global.stitches';
+import { CssBaseline } from '@nextui-org/react';
+import Script from 'next/script';
+import { globalStyles } from '../styles/global.stitches';
 
 class MyDocument extends Document {
    static async getInitialProps(
@@ -24,17 +25,19 @@ class MyDocument extends Document {
    render() {
       return (
          <Html lang="en">
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-         
-            <script src="https://cdn.userway.org/widget.js" data-account="FnP375IGZn"></script>
-            <link
-               href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-               rel="stylesheet"
-            />
-            <Head>{CssBaseline.flush()}
-            
+            <Head>
+               <link rel="preconnect" href="https://fonts.googleapis.com" />
+               <link
+                  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+                  rel="stylesheet"
+               />
+               {CssBaseline.flush()}
+               <Script
+                  src="https://cdn.userway.org/widget.js"
+                  data-account="FnP375IGZn"
+                  strategy="afterInteractive"
+               />
             </Head>
-
             <body>
                <Main />
                <NextScript />
