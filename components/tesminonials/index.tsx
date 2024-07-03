@@ -30,8 +30,8 @@ export const Testimonials = () => {
                    <Image
                         src="/assets/images/app.png"
                         alt="Sauti Salama"
-                        width={600}
-                        height={450}
+                        width={500}
+                        height={350}
                         className='object-contain'
                      /> 
             </Flex>

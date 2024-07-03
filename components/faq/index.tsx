@@ -28,9 +28,8 @@ export const Faq = () => {
                      textAlign: 'center',
                   }}
                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  condimentum, nisl ut aliquam lacinia, nisl nisl aliquet
-                  aliquet
+                  Welcome to the Sauti Salama FAQ (Frequently Asked Questions) section. 
+                  This section is designed to provide you with quick and easy answers to common questions about using our platform. 
                </Text>
             </Flex>
 

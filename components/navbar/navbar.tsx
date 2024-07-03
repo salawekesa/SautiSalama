@@ -11,10 +11,10 @@ export const Nav = () => {
   const { setTheme } = useNextTheme();
   const { isDark, type } = useTheme();
   const collapseItems = [
-    { name: 'Legal', href: '/legal' },
-    { name: 'Health', href: '/health' },
-    { name: 'Shelter', href: '/shelter' },
-    { name: 'Community', href: '/community' },
+    { name: 'Legal', href: '/Legal' },
+    { name: 'Health', href: '/Health' },
+    { name: 'Shelter', href: '/Shelter' },
+    { name: 'Community', href: '/Community' },
     { name: 'Report', href: '/Report' }
   ];
 
